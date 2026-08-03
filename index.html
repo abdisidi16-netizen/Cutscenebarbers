@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-neutral-950 text-neutral-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cut Scene Barbershop | Kansas City, MO</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cinzel', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            gold: '#D4AF37',
+            'gold-light': '#F3E5AB',
+            'gold-dark': '#AA771C',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .font-serif-display { font-family: 'Cinzel', Georgia, serif; }
+    .font-sans-body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+    }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #D4AF37 0%, #FFF3B0 35%, #AA771C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .shadow-gold {
+      box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 font-sans antialiased min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div className="bg-neutral-900 border-b border-neutral-800 text-xs text-neutral-300 py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+        <a href="https://maps.google.com/?q=1600+Genessee+St,+Kansas+City,+MO+64102" target="_blank" class="flex items-center gap-1.5 hover:text-amber-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>1600 Genessee St, Kansas City, MO 64102</span>
+        </a>
+        <span class="text-amber-400 font-medium flex items-center gap-1">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+          <span>5.0 (7 Verified Google Reviews)</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-neutral-400 hidden lg:inline">Mon–Fri: 8am–6pm | Sat: 8am–4pm</span>
+        <a href="tel:+18164743999" class="flex items-center gap-1.5 font-bold text-amber-400 hover:text-amber-300">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>(816) 474-3999</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="sticky top-0 z-40 bg-neutral-950/90 backdrop-blur-md border-b border-amber-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-neutral-900 to-amber-950 border border-amber-500/40 flex items-center justify-center shadow-gold">
+            <i data-lucide="scissors" class="w-6 h-6 text-amber-400 -rotate-45"></i>
+          </div>
+          <div>
+            <span class="font-serif-display text-2xl font-bold tracking-wider text-gold-gradient block leading-none">CUT SCENE</span>
+            <span class="text-[10px] uppercase tracking-widest text-neutral-400 block mt-1">Barbershop • KC</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#home" class="text-neutral-300 hover:text-amber-400">Home</a>
+          <a href="#about" class="text-neutral-300 hover:text-amber-400">About</a>
+          <a href="#services" class="text-neutral-300 hover:text-amber-400">Services</a>
+          <a href="#reviews" class="text-neutral-300 hover:text-amber-400">Reviews</a>
+          <a href="#location" class="text-neutral-300 hover:text-amber-400">Location</a>
+        </nav>
+
+        <a href="#location" class="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gold-gradient text-neutral-950 font-bold text-sm shadow-gold hover:brightness-110">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book Appointment</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative py-20 lg:py-28 text-center bg-neutral-950 overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-neutral-900 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium mb-8">
+        <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+        <span class="font-bold text-white">5.0 Rating</span>
+        <span>•</span>
+        <span>Hidden Gem in Kansas City</span>
+      </div>
+
+      <h1 class="font-serif-display text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight">
+        CRAFTED CUTS. <br />
+        <span class="text-gold-gradient">OLD SCHOOL MASTERY.</span>
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-neutral-300 max-w-2xl mx-auto font-sans-body leading-relaxed">
+        Welcome to <strong class="text-white">Cut Scene Barbershop</strong>. Kansas City’s trusted destination for classic fades, precision razor work, and hot towel shaves by master barber <strong class="text-amber-400">Rocky</strong>.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="tel:+18164743999" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gold-gradient text-neutral-950 font-bold text-lg shadow-gold flex items-center justify-center gap-3">
+          <i data-lucide="phone" class="w-5 h-5"></i>
+          <span>Call (816) 474-3999</span>
+        </a>
+        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-neutral-900 border border-neutral-700 text-white font-semibold text-lg flex items-center justify-center gap-3 hover:border-amber-500/60">
+          <i data-lucide="scissors" class="w-5 h-5 text-amber-400"></i>
+          <span>View Menu & Prices</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-neutral-900/60 border-y border-neutral-850">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider block">About Cut Scene</span>
+          <h2 class="font-serif-display text-3xl sm:text-5xl font-bold text-white">
+            A True Hidden Gem in <span class="text-gold-gradient">Kansas City</span>
+          </h2>
+          <blockquote class="p-4 rounded-xl bg-neutral-950 border-l-4 border-amber-500 text-neutral-300 italic text-base">
+            &ldquo;Love this place… hidden gem in this part of town. Rocky is an old school barber… the way it used to be! Clean as a whistle… and got me cleaned up too… thanks Rocky!&rdquo;
+          </blockquote>
+          <p class="text-neutral-300 leading-relaxed">
+            Located at <strong class="text-white">1600 Genessee St</strong>, Cut Scene combines traditional barbering craftsmanship with a spotless, family-friendly shop.
+          </p>
+        </div>
+
+        <div class="lg:col-span-5 bg-neutral-950 p-8 rounded-2xl border border-amber-500/30 shadow-2xl">
+          <span class="text-amber-400 text-xs uppercase font-bold tracking-widest block">Master Barber</span>
+          <h3 class="font-serif-display text-2xl font-bold text-white mt-1">Rocky</h3>
+          <p class="text-sm text-neutral-400 mb-4">Master Barber & Founder • 25+ Years Experience</p>
+          <p class="text-sm text-neutral-300 italic leading-relaxed mb-6">
+            &ldquo;Dedicated to classic barbering techniques, razor-sharp edge lines, and giving every customer a spotless, comfortable experience.&rdquo;
+          </p>
+          <div class="pt-4 border-t border-neutral-800 text-xs text-neutral-400 space-y-2">
+            <div><strong>Location:</strong> 1600 Genessee St, KC MO</div>
+            <div><strong>Amenities:</strong> Kid-Friendly, Restroom On-Site</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-neutral-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="font-serif-display text-3xl sm:text-5xl font-bold text-white">SERVICES & <span class="text-gold-gradient">PRICING</span></h2>
+        <p class="text-neutral-400 mt-2">Transparent pricing, hot towel finish, and classic razor edging included.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-neutral-900 p-6 rounded-2xl border border-amber-500/40 shadow-gold">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-serif-display text-xl font-bold text-white">The Signature Cut</h3>
+            <span class="font-serif-display text-2xl font-bold text-amber-400">$35</span>
+          </div>
+          <p class="text-xs text-neutral-400 mb-4">30 min • Precision haircut + straight razor neck shave & hot towel.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-2xl border border-amber-500/40 shadow-gold">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-serif-display text-xl font-bold text-white">Cut & Beard Combo</h3>
+            <span class="font-serif-display text-2xl font-bold text-amber-400">$55</span>
+          </div>
+          <p class="text-xs text-neutral-400 mb-4">50 min • Signature haircut, beard sculpting, hot towel & razor line-up.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-serif-display text-xl font-bold text-white">Beard Trim & Line Up</h3>
+            <span class="font-serif-display text-2xl font-bold text-amber-400">$25</span>
+          </div>
+          <p class="text-xs text-neutral-400 mb-4">25 min • Beard shaping, length reduction & cheek razor edging.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-serif-display text-xl font-bold text-white">Royal Hot Towel Shave</h3>
+            <span class="font-serif-display text-2xl font-bold text-amber-400">$40</span>
+          </div>
+          <p class="text-xs text-neutral-400 mb-4">35 min • Multi-hot towel straight razor shave with essential oils.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-serif-display text-xl font-bold text-white">Junior Cut (Kids 12 & Under)</h3>
+            <span class="font-serif-display text-2xl font-bold text-amber-400">$25</span>
+          </div>
+          <p class="text-xs text-neutral-400 mb-4">30 min • Patient, gentle haircut in a kid-friendly atmosphere.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-2xl border border-neutral-800">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-serif-display text-xl font-bold text-white">Classic Senior Cut (65+)</h3>
+            <span class="font-serif-display text-2xl font-bold text-amber-400">$28</span>
+          </div>
+          <p class="text-xs text-neutral-400 mb-4">30 min • Traditional haircut with eyebrow and ear trim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact -->
+  <section id="location" class="py-20 bg-neutral-900/60 border-t border-neutral-850">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-neutral-950 p-6 rounded-2xl border border-amber-500/30 shadow-xl space-y-4">
+            <h3 class="font-serif-display text-2xl font-bold text-white">Contact & Location</h3>
+            <p class="text-neutral-300 text-sm">1600 Genessee St, Kansas City, MO 64102</p>
+            <a href="tel:+18164743999" class="font-serif-display text-2xl font-black text-amber-400 block">(816) 474-3999</a>
+          </div>
+
+          <div class="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 space-y-2 text-sm">
+            <h4 class="font-serif-display text-lg font-bold text-white mb-2">Shop Hours</h4>
+            <div class="flex justify-between text-neutral-300"><span>Monday – Friday</span><span class="text-amber-400 font-mono">8:00 AM – 6:00 PM</span></div>
+            <div class="flex justify-between text-neutral-300"><span>Saturday</span><span class="text-amber-400 font-mono">8:00 AM – 4:00 PM</span></div>
+            <div class="flex justify-between text-neutral-500"><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-neutral-950 p-2 rounded-2xl border border-amber-500/30 overflow-hidden shadow-2xl h-[400px]">
+          <iframe title="Cut Scene Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.34789218206!2d-94.60838942343881!3d39.09859297168195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0f04f2f7dbf17%3A0xb304b4d70b5bc16b!2s1600%20Genessee%20St%2C%20Kansas%20City%2C%20MO%2064102!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-950 border-t border-neutral-900 py-10 text-center text-xs text-neutral-500">
+    <p>© Cut Scene Barbershop • 1600 Genessee St, Kansas City, MO 64102 • (816) 474-3999</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
